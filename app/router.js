@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('polls', function() {
     this.route('poll', {
       path: ':poll_id'
+    }, function() {
+      this.route('results');
     });
   });
 });
